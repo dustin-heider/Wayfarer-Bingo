@@ -5,39 +5,39 @@ Kirche,Kaugummi-Automat
 INRI (Bezeichnung),Objekt im Kreisel
 Mural,Graffiti falsch geschrieben
 Radknotenpunkt,Anno / Erbaut
-"Restaurant, Gaststätte, Kneipe",Geotag im Zusatzbild
-Aussichtspunkt,Beleidigung in der Zusatzinfo
+Restaurant/Gaststätte/Kneipe,Geotag im Zusatzbild
+Aussichtspunkt,Beleidigung in Zusatzinfo
 Kleingärtnerverein,Casino / Stripclub
 Insektenhotel,Vorschlag mit aktuellem Streetview
 Sportplatz,Litfaßsäule
 Spielplatz,Finger vor der Linse
-Baumarktlöwe,Denglisches Wort im Text
+Baumarktlöwe,Denglisches Wort
 """Historisch""",Foto aus Auto/Gebäude
 Schild eines Lehrpfads,Hund im Bild
-"""Hier sieht man...""",Gedenkplakette beim Straßenschild
-Jung und Alt / Groß und Klein,Alliteration
-Feuerwehr / Feuerwehr-Gedenkstein,Baum verdeckt Wayspot
-Hauptbild und Zusatzbild gleich,Platzhalter-Texte
+"""Hier sieht man ..""",Gedenkplakette (Straßenschild)
+Jung & Alt / Groß & Klein,Alliteration
+Feuerwehr(-Gedenkstein),Baum verdeckt Wayspot
+Haupt- & Zusatzbild gleich,Platzhalter-Texte
 Stolperstein,Corona-Erwähnung  / Maske
 Generisches Straßenschild,Sonnenuhr
 Sitzbank,Gullydeckel
-Post-/Briefkasten,Foto-Edits mit 3 oder mehr Bildern
-Gefallenendenkmal,Standort-Edits mit 3 oder mehr Standorten
+Post-/Briefkasten,Foto-Edits (3+ Bilder)
+Gefallenendenkmal,Standort-Edits (3+ Standorte)
 Duplikat,Wegweiser zum Objekt
 Wasserpumpe,Museum
-Wanderwegweiser,Wort mit 10 oder mehr Buchstaben
-Bitte den ... Standort nehmen,Maibaum
+Wanderwegweiser,Wort mit 10+ Buchstaben
+"""Bitte Standort x nehmen""",Maibaum
 Objekt auf Friedhof / Friedhof,Ingress-Referenz
 Schutzhütte,Fuß/Schuh im Bild
-Nummernschild erkennbar im Hauptbild,Link in der Zusatzinfo
+Nummernschild erkennbar,Link in Zusatzinfo
 Spiegelung des Fotografen,Foto mit Wasserzeichen
 Herzlich Willkommen-Schild,Bildschirmfoto/Screenshot
 Skulptur / Statue,Emoji / Emoticon
-Rechtschreibungs-Edit,"Saisonale Deko (Osterhasen, Kürbis, Weihnachtsbaum)"
+Rechtschreibungs-Edit,Saisonale Deko
 Beschreibung mit einem Wort,
-Text mit ALL CAPS,
+Wort in ALL CAPS,
 Anführungszeichen im Text,
 Fahrrad,
 Verweis auf die Kriterien,
 Baum,
-"PokerStop, PokkeStop, PokeStopp etc.",
+PokéStop-Variation,

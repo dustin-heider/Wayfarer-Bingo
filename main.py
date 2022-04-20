@@ -1,52 +1,42 @@
-from random import choice, randint, shuffle, sample
+from random import shuffle, sample
 from pandas import *
-from math import sqrt
-from turtle import Turtle, Screen
+from tkinter import *
+from PIL import ImageGrab
+
+
+def row_down():
+    global x_position, y_position
+    x_position = 174
+    y_position += 90
+
+
+x_position = 174
+y_position = 210
+count = 0
 
 data = read_csv("data/Bingo_Kategorien.CSV").dropna()
 easy_categories = data["Einfache Kategorien"].tolist()
 hard_categories = data["Schwere Kategorien"].tolist()
 
-print(easy_categories)
-print(hard_categories)
-
 easy = sample(easy_categories, 13)
 hard = sample(hard_categories, 3)
-
 category_list = easy + hard
 shuffle(category_list)
 print(category_list)
 
+window = Tk()
+window.title("Wayfarer D/A/CH Bingo")
+canvas = Canvas(height=600, width=900)
+template = PhotoImage(file="./data/Bingo 4x4.png")
+canvas.create_image(450, 300, image=template)
 
-screen = Screen()
-#screen.screensize(canvwidth=500, canvheight=400)
-
-tim = Turtle()
-tim.hideturtle()
-tim.penup()
-tim.pensize()
-tim.speed("fastest")
-tim.setheading(135)
-tim.forward(350)
-tim.setheading(0)
-count = 0
-
-for item in range(len(category_list)):
-
-    tim.write(category_list[item], align="center", font=("Arial", 11, "normal"))
-    tim.forward(175)
+for item in category_list:
+    text = canvas.create_text(x_position, y_position, text=item, font=("Arial", 10, "normal"))
+    x_position += 184
     count += 1
     if count % 4 == 0:
-        tim.setheading(270)
-        tim.forward(100)
-        tim.setheading(180)
-        tim.forward(700)
-        tim.setheading(0)
+        row_down()
 
+canvas.pack()
 
-screen.exitonclick()
-
-#number_categories = int(input("How many categories do you want to have? "))
-#rows_and_columns = sqrt(number_categories)
-#number_hard_categories = rows_and_columns - 1
-
+window.mainloop()
