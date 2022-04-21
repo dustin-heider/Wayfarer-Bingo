@@ -1,43 +1,48 @@
-Einfache Kategorien,Schwere Kategorien
-Tischtennisplatte,Wayspot im Wasser
-Stromkasten,Grenzstein
-Kirche,Kaugummi-Automat
-INRI (Bezeichnung),Objekt im Kreisel
-Mural,Graffiti falsch geschrieben
-Radknotenpunkt,Anno / Erbaut
-Restaurant/Gastst√§tte/Kneipe,Geotag im Zusatzbild
-Aussichtspunkt,Beleidigung in Zusatzinfo
-Kleing√§rtnerverein,Casino / Stripclub
-Insektenhotel,Vorschlag mit aktuellem Streetview
-Sportplatz,Litfa√üs√§ule
-Spielplatz,Finger vor der Linse
-Baumarktl√∂we,Denglisches Wort
-"""Historisch""",Foto aus Auto/Geb√§ude
-Schild eines Lehrpfads,Hund im Bild
-"""Hier sieht man ..""",Gedenkplakette (Stra√üenschild)
-Jung & Alt / Gro√ü & Klein,Alliteration
-Feuerwehr(-Gedenkstein),Baum verdeckt Wayspot
-Haupt- & Zusatzbild gleich,Platzhalter-Texte
-Stolperstein,Corona-Erw√§hnung  / Maske
-Generisches Stra√üenschild,Sonnenuhr
-Sitzbank,Gullydeckel
-Post-/Briefkasten,Foto-Edits (3+ Bilder)
-Gefallenendenkmal,Standort-Edits (3+ Standorte)
-Duplikat,Wegweiser zum Objekt
-Wasserpumpe,Museum
-Wanderwegweiser,Wort mit 10+ Buchstaben
-"""Bitte Standort x nehmen""",Maibaum
-Objekt auf Friedhof / Friedhof,Ingress-Referenz
-Schutzh√ºtte,Fu√ü/Schuh im Bild
-Nummernschild erkennbar,Link in Zusatzinfo
-Spiegelung des Fotografen,Foto mit Wasserzeichen
-Herzlich Willkommen-Schild,Bildschirmfoto/Screenshot
-Skulptur / Statue,Emoji / Emoticon
-Rechtschreibungs-Edit,Saisonale Deko
-Beschreibung mit einem Wort,
-Wort in ALL CAPS,
-Anf√ºhrungszeichen im Text,
+Einfache Kategorien,Schwierige Kategorien
+"""Historisch""","""Mural"""
+"""INRI""","""Anno / Erbaut"""
+"""Hier sieht man ..""",Graffiti falsch geschrieben
+"""Bitte Standort x nehmen""",Wort mit 12+ Buchstaben
+"""Jung & Alt / Groﬂ & Klein""",Alliteration (3+ Wˆrter)
+"""Kein Privatgrundst¸ck""",Wort in ALL CAPS
+PokÈStop-Variation,Ingress-Referenz
+3x gleicher Text,Link in Zusatzinfo
+Beschreibung mit einem Wort,Beleidigung in Zusatzinfo
+Verweis auf die Kriterien,Denglisches Wort
+Anf¸hrungszeichen im Text,Platzhalter-Texte
+Rechtschreibungs-Edit,Emoji / Emoticon
+Duplikat,Foto-Edits (3+ Bilder)
+Haupt- & Zusatzbild gleich,Standort-Edits (3+ Standorte)
+Spiegelung des Fotografen,Aktuelles Streetview (bis 1 Jahr)
+Schlechte Ausrichtung,Foto mit Wasserzeichen
+Rangezoomt,Bildschirmfoto/Screenshot
+Nummernschild erkennbar,Geotag im Zusatzbild
+Stromkasten,Finger vor der Linse
+Aussichtspunkt,Foto aus Auto / Geb‰ude
+Sportplatz,Fuﬂ / Schuh im Bild
+Vereinsheim,Lebendiges Tier im Bild
+Spielplatz,Gedenkplakette (Straﬂenschild)
+Tischtennisplatte,Baum verdeckt Wayspot
+Feuerwehr(-Gedenkstein),Sonnenuhr
+Baumarktlˆwe,Gullydeckel
+Stolperstein,Wegweiser zum Objekt
+Generisches Straﬂenschild,Museum
+Sitzbank,Litfaﬂs‰ule
+Post-/Briefkasten,Maibaum
+Gefallenendenkmal,Casino / Stripclub
+Skulptur / Statue,Grenzstein
+Kleingartenverein,Kaugummi-Automat
+Wanderwegweiser,Objekt im Kreisel
+Radknotenpunkt,Wayspot im Wasser
+Schild eines Lehrpfads,Saisonale Deko
+Schutzh¸tte / H¸tte,
+Objekt auf Friedhof / Friedhof,
+Wandbild,
+Herzlich Willkommen-Schild,
+Gesch‰ft/Supermarkt/B‰cker,
+Restaurant/Gastst‰tte/Kneipe,
 Fahrrad,
-Verweis auf die Kriterien,
-Baum,
-Pok√©Stop-Variation,
+Kirche,
+Naturmerkmal,
+Wasserpumpe,
+Insektenhotel,
