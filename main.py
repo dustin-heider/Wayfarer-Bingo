@@ -17,6 +17,8 @@ hard_categories = data["Schwierige Kategorien"].tolist()
 
 name = input("Name: ")
 number_hard_categories = int(input("Mit wie vielen schwierigen Kategorien möchtest du spielen? (Zahl von 0 - 16) "))
+if number_hard_categories < 0 or number_hard_categories > 16:
+    number_hard_categories = 0
 
 number_easy_categories = 16 - number_hard_categories
 easy_category_list = sample(easy_categories, number_easy_categories)
