@@ -12,8 +12,29 @@ def row_down():
 
 
 data = read_csv("data/Bingo_Kategorien.CSV", encoding="ISO-8859-1").dropna()
-easy_categories = data["Einfache Kategorien"].tolist()
-hard_categories = data["Schwierige Kategorien"].tolist()
+easy_categories = ["Tischtennisplatte", "Stromkasten", "Kirche", '"INRI"', "Wandbild", "Radknotenpunkt",
+                   "Restaurant/Gaststätte/\nKneipe", "Aussichtspunkt", "Kleingartenverein", "Insektenhotel",
+                   "Sportplatz", "Spielplatz", "Baumarktlöwe", '"Historisch"', "Schild eines\nLehrpfads",
+                   '"Hier sieht\nman ..."', "Jung & Alt /\nGroß & Klein", "Feuerwehr(-Gedenkstein)",
+                   "Haupt- &\nZusatzbild gleich", "Stolperstein", "Generisches Straßenschild", "Sitzbank",
+                   "Post-/Briefkasten", "Gefallenendenkmal", "Duplikat", "Wasserpumpe", "Wanderwegweiser",
+                   "Bitte Standort x\nnehmen", "Objekt auf\nFriedhof / Friedhof", "Schutzhütte / Hütte",
+                   "Nummernschild erkennbar", "Spiegelung des Fotografen", "Herzlich Willkommen-\nSchild",
+                   "Skulptur / Statue", "Rechtschreibungs-Edit", "Beschreibung mit\neinem Wort", "Wort in ALL CAPS",
+                   "Anführungszeichen\nim Text", "Fahrrad", "Verweis auf\ndie Kriterien", "Baum",
+                   "PokéStop-Variation"]
+hard_categories = ['"Mural"', '"Anno / Erbaut"', '"Graffiti" falsch\ngeschrieben', 'Wort mit\n12+ Buchstaben',
+                   'Alliteration\n(3+ Wörter)', 'Wort in ALL CAPS', 'Ingress-Referenz', 'Link in Zusatzinfo',
+                   'Beleidigung in\nZusatzinfo', 'Denglisches Wort', 'Platzhalter-Texte', 'Emoji / Emoticon',
+                   'Foto-Edits\n(3+ Bilder)', 'Standort-Edits\n(3+ Standorte)', 'Aktuelles Streetview\n(bis 1 Jahr)',
+                   'Foto mit Wasserzeichen', 'Bildschirmfoto/\nScreenshot', 'Geotag im Zusatzbild',
+                   'Finger vor\nder Linse', 'Foto aus Auto/\nGebäude', 'Fuß/Schuh\nim Bild', 'Lebendiges Tier\nim Bild',
+                   'Gedenkplakette bei\neinem Straßenschild', 'Baum verdeckt Wayspot', 'Sonnenuhr', 'Gullydeckel',
+                   'Wegweiser zum Objekt', 'Museum', 'Litfaßsäule', 'Maibaum', 'Casino / Stripclub', 'Grenzstein',
+                   'Kaugummi-Automat', 'Objekt im Kreisel', 'Wayspot im Wasser', 'Saisonale Deko']
+
+
+print(hard_categories)
 
 name = input("Name: ")
 number_hard_categories = int(input("Mit wie vielen schwierigen Kategorien möchtest du spielen? (Zahl von 0 - 16) "))
@@ -40,7 +61,7 @@ y_position = 210
 count = 0
 datum = datetime.today().strftime('%d.%m.%y')
 for item in category_list:
-    canvas.create_text(x_position, y_position, text=item, font=("Arial", 10, "normal"))
+    canvas.create_text(x_position, y_position, justify="center", text=item, font=("Arial", 10, "normal"))
     x_position += 184
     count += 1
     if count % 4 == 0:
