@@ -68,8 +68,8 @@ else:
             row_down()
 
     canvas.create_text(697, 78, text="Regeln:\n"
-                                      "1 Punkt pro Feld\n"
-                                      "3 Punkte pro Reihe (Bingo)", justify="center", font=FONT_BOLD)
+                                     "1 Punkt pro Feld\n"
+                                     "3 Punkte pro Reihe (Bingo)", justify="center", font=FONT_BOLD)
     canvas.create_text(133, 68, text=f"Datum: {datum}", justify="center", font=FONT_BOLD)
     canvas.create_text(133, 88, text=f"Name: {name}", justify="center", font=FONT_BOLD)
 
