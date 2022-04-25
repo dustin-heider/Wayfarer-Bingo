@@ -48,8 +48,6 @@ else:
     hard_category_list = sample(hard_categories, number_hard_categories)
     category_list = easy_category_list + hard_category_list
     shuffle(category_list)
-    # category_string = "\n".join(category_list)
-    # pyperclip.copy(category_string)
 
     window = Tk()
     window.title("Wayfarer D/A/CH Bingo")
