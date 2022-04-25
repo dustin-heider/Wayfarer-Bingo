@@ -54,7 +54,7 @@ else:
     window = Tk()
     window.title("Wayfarer D/A/CH Bingo")
     canvas = Canvas(height=881, width=836, background="white")
-    template = PhotoImage(file="./data/Bingo 4x4_Feld.png")
+    template = PhotoImage(file="./data/Bingo 4x4_new.png")
     canvas.create_image(418, 440.5, image=template)
     canvas.pack()
 
