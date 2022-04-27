@@ -2,7 +2,7 @@ from random import shuffle, sample
 from tkinter import *
 from datetime import datetime
 
-FONT_NORMAL = ("Arial", 11, "normal")
+FONT_NORMAL = ("Arial", 13, "normal")
 FONT_BOLD = ("Arial", 11, "bold")
 
 
@@ -25,13 +25,15 @@ easy_categories = ['"Historisch"', '"INRI"', '"Hier sieht\nman ..."', '"Bitte St
 hard_categories = ['"Mural"', '"Anno / Erbaut"', '"Graffiti" falsch\ngeschrieben', 'Wort mit\n12+ Buchstaben',
                    'Alliteration\n(3+ Wörter)', 'Wort in ALL CAPS', 'Ingress-Referenz', 'Link in Zusatzinfo',
                    'Beleidigung in\nZusatzinfo', 'Denglisches Wort', 'Platzhalter-Texte', 'Emoji / Emoticon',
-                   'Foto-Edits\n(3+ Bilder)', 'Standort-Edits\n(3+ Standorte)', 'Aktuelles Streetview\n(bis 1 Jahr)',
-                   'Foto mit\nWasserzeichen', 'Bildschirmfoto/\nScreenshot', 'Geotag im Zusatzbild',
+                   'Foto-Edits\n(3+ Bilder)', 'Standort-Edits\n(3+ Standorte)', 'Foto mit\nWasserzeichen',
+                   'Bildschirmfoto/\nScreenshot', 'Geotag im Zusatzbild',
                    'Finger vor\nder Linse', 'Foto aus Auto/\nGebäude', 'Fuß/Schuh\nim Bild', 'Lebendiges Tier\nim Bild',
                    'Gedenkplakette bei\neinem Straßenschild', 'Baum verdeckt\nWayspot', 'Sonnenuhr', 'Gullydeckel',
                    'Wegweiser\nzum Objekt', 'Museum', 'Litfaßsäule', 'Maibaum', 'Casino / Stripclub', 'Grenzstein',
                    'Kaugummi-Automat', 'Objekt im Kreisel', 'Wayspot im Wasser', 'Schützenkönig/in-\nScheibe',
                    'Saisonale Deko']
+
+# hard_categories_redacted = ['Aktuelles Streetview\n(bis 1 Jahr)',]
 
 name = input("Name: ")
 if name == "":
