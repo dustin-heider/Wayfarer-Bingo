@@ -30,7 +30,8 @@ hard_categories = ['"Mural"', '"Anno / Erbaut"', '"Graffiti" falsch\ngeschrieben
                    'Finger vor\nder Linse', 'Foto aus Auto/\nGebäude', 'Fuß/Schuh\nim Bild', 'Lebendiges Tier\nim Bild',
                    'Gedenkplakette bei\neinem Straßenschild', 'Baum verdeckt\nWayspot', 'Sonnenuhr', 'Gullydeckel',
                    'Wegweiser\nzum Objekt', 'Museum', 'Litfaßsäule', 'Maibaum', 'Casino / Stripclub', 'Grenzstein',
-                   'Kaugummi-Automat', 'Objekt im Kreisel', 'Wayspot im Wasser', 'Saisonale Deko']
+                   'Kaugummi-Automat', 'Objekt im Kreisel', 'Wayspot im Wasser', 'Schützenkönig/in-\nScheibe',
+                   'Saisonale Deko']
 
 name = input("Name: ")
 if name == "":
@@ -67,10 +68,12 @@ else:
         if count % 4 == 0:
             row_down()
 
-    canvas.create_text(697, 78, text="Regeln:\n"
+    canvas.create_text(135, 94, text="Regeln:\n"
                                      "1 Punkt pro Feld\n"
                                      "3 Punkte pro Reihe (Bingo)", justify="center", font=FONT_BOLD)
-    canvas.create_text(133, 68, text=f"Datum: {datum}", justify="center", font=FONT_BOLD)
-    canvas.create_text(133, 88, text=f"Name: {name}", justify="center", font=FONT_BOLD)
+    canvas.create_text(697, 94, text=f"Datum: {datum}\n"
+                                     f"Name: {name}\n"
+                                     f"Schwierige Kategorien: {number_hard_categories}", justify="center",
+                                     font=FONT_BOLD)
 
     window.mainloop()
