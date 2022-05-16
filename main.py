@@ -14,31 +14,26 @@ def row_down():
 
 easy_categories = ['"Historisch"', '"INRI"', '"Hier sieht\nman ..."', '"Bitte Standort\nx nehmen"',
                    '"Jung & Alt /\nGroß & Klein"', '"Kein\nPrivatgrundstück"', 'PokéStop-Variation', '3x gleicher Text',
-                   'Beschreibung mit\neinem Wort', 'Wort mit\n12+ Buchstaben', '"Danke für die\n Bewertung" / "Danke"',
-                   'Verweis auf\ndie Kriterien', 'Anführungszeichen\nim Text',
+                   'Beschreibung mit\neinem Wort', 'Verweis auf\ndie Kriterien', 'Anführungszeichen\nim Text',
                    '"Unnötiger" Edit', 'Rechtschreibungs-\nEdit', 'Leere\nDuplikatsleiste', 'Duplikat',
-                   'Haupt- &\nZusatzbild gleich', 'Schatten auf\ndem Wayspot', 'Schlechte Ausrichtung', 'Rangezoomt',
+                   'Haupt- &\nZusatzbild gleich', 'Spiegelung des\nFotografen', 'Schlechte Ausrichtung', 'Rangezoomt',
                    'Nummernschild\nerkennbar', 'Stromkasten', 'Aussichtspunkt', 'Sportplatz', 'Vereinsheim',
                    'Spielplatz', 'Tischtennisplatte', 'Feuerwehr/\n(-Gedenkstein)', 'Baumarktlöwe', 'Stolperstein',
-                   'Generisches\nStraßenschild', 'Sitzbank', 'Wayfarer-Referenz', 'Wasserpumpe/Brunnen',
-                   'Gefallenendenkmal', 'Skulptur / Statue', 'Kleingartenverein', 'Insektenhotel',
-                   'Naturmerkmal', 'Wanderwegweiser', 'Kirche', 'Fahrrad im Bild',
-                   'Wanderkarte/\nOrtskarte', 'Name des Spielgeräts\nim Titel']
+                   'Generisches\nStraßenschild', 'Sitzbank', 'Post-/Briefkasten',
+                   'Gefallenendenkmal', 'Skulptur / Statue', 'Kleingartenverein', 'Wanderwegweiser']
 
-hard_categories = ['"Mural" falsch\nbenutzt', '"Anno / Erbaut"', '"Graffiti" falsch\ngeschrieben',
+hard_categories = ['"Mural"', '"Anno / Erbaut"', '"Graffiti" falsch\ngeschrieben', 'Wort mit\n12+ Buchstaben',
                    'Alliteration\n(3+ Wörter)', 'Wort in ALL CAPS', 'Ingress-Referenz', 'Link in Zusatzinfo',
                    'Beleidigung in\nZusatzinfo', 'Denglisches Wort', 'Platzhalter-Texte', 'Emoji / Emoticon',
-                   'Foto-Edits\n(3+ Bilder)', 'Standort-Edits\n(4+ Standorte)', 'Foto mit\nWasserzeichen',
-                   'Bildschirmfoto/\nScreenshot', 'Geotag im Zusatzbild', 'Aktuelles Streetview\n(bis 1 Jahr)',
+                   'Foto-Edits\n(3+ Bilder)', 'Standort-Edits\n(3+ Standorte)', 'Foto mit\nWasserzeichen',
+                   'Bildschirmfoto/\nScreenshot', 'Geotag im Zusatzbild',
                    'Finger vor\nder Linse', 'Foto aus Auto/\nGebäude', 'Fuß/Schuh\nim Bild', 'Lebendiges Tier\nim Bild',
                    'Gedenkplakette bei\neinem Straßenschild', 'Baum verdeckt\nWayspot', 'Sonnenuhr', 'Gullydeckel',
-                   'Wegweiser\nzum Objekt', 'Museum', 'Litfaßsäule', 'Maibaum',
-                   'Grenzstein/OD-Stein/\nKilometerstein', 'Ort mit 10+\nBuchstaben',
+                   'Wegweiser\nzum Objekt', 'Museum', 'Litfaßsäule', 'Maibaum', 'Casino / Stripclub', 'Grenzstein',
                    'Kaugummi-Automat', 'Objekt im Kreisel', 'Wayspot im Wasser', 'Schützenkönig/in-\nScheibe',
-                   'Post-/Briefkasten', 'Spiegelung des\nFotografen', 'Spielplatz mit\n4+ Wayspots', 'Fitness-Station',
                    'Saisonale Deko']
 
-# hard_categories_redacted = ['Casino / Stripclub',]
+# hard_categories_redacted = ['Aktuelles Streetview\n(bis 1 Jahr)',]
 
 name = input("Name: ")
 if name == "":
