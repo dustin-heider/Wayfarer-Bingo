@@ -4,6 +4,8 @@ from datetime import datetime
 
 FONT_NORMAL = ("Arial", 13, "normal")
 FONT_BOLD = ("Arial", 11, "bold")
+STANDARD_DIFFICULTY = 4
+DATUM = datetime.today().strftime('%d.%m.%y')
 
 
 def row_down():
@@ -40,47 +42,52 @@ hard_categories = ['"Mural" falsch\nbenutzt', '"Anno / Erbaut"', '"Graffiti" fal
 
 # hard_categories_redacted = ['Casino / Stripclub',]
 
-name = input("Name: ")
-if name == "":
-    name = "Standard-Bingo"
-try:
-    number_hard_categories = int(input("Mit wie vielen schwierigen Kategorien möchtest du spielen? (Zahl von 0 - 16) "))
-except ValueError:
-    print(f"{ValueError}. Die Eingabe enthält keine Zahl!")
-else:
-    if number_hard_categories < 0 or number_hard_categories > 16:
-        raise ValueError("Nummer muss im Bereich 0 - 16 liegen!")
+players_remaining = True
+while players_remaining:
+    name = input("Name: ")
+    if name.title() == "Exit":
+        break
+    if name == "":
+        name = "Standard-Bingo"
+    try:
+        number_hard_categories = int(input("Mit wie vielen schwierigen Kategorien möchtest du spielen?"
+                                           "(Zahl von 0 - 16) "))
+    except ValueError:
+        print(f"{ValueError}. Die Eingabe enthält keine Zahl!")
+    else:
+        if number_hard_categories < 0 or number_hard_categories > 16:
+            number_hard_categories = STANDARD_DIFFICULTY
+            print(f"Standard-Schwierigkeitsgrad ({number_hard_categories} schwierige Kategorien) wurde ausgewählt!")
 
-    number_easy_categories = 16 - number_hard_categories
-    easy_category_list = sample(easy_categories, number_easy_categories)
-    hard_category_list = sample(hard_categories, number_hard_categories)
-    category_list = easy_category_list + hard_category_list
-    shuffle(category_list)
+        number_easy_categories = 16 - number_hard_categories
+        easy_category_list = sample(easy_categories, number_easy_categories)
+        hard_category_list = sample(hard_categories, number_hard_categories)
+        category_list = easy_category_list + hard_category_list
+        shuffle(category_list)
 
-    window = Tk()
-    window.title("Wayfarer D/A/CH Bingo")
-    canvas = Canvas(height=881, width=836, background="white")
-    template = PhotoImage(file="./data/Bingo 4x4_new.png")
-    canvas.create_image(418, 440.5, image=template)
-    canvas.pack()
+        window = Tk()
+        window.title("Wayfarer D/A/CH Bingo")
+        canvas = Canvas(height=881, width=836, background="white")
+        template = PhotoImage(file="./data/Bingo 4x4_new.png")
+        canvas.create_image(418, 440.5, image=template)
+        canvas.pack()
 
-    x_position = 135
-    y_position = 233
-    count = 0
-    datum = datetime.today().strftime('%d.%m.%y')
-    for item in category_list:
-        canvas.create_text(x_position, y_position, justify="center", text=item, font=FONT_NORMAL)
-        x_position += 187
-        count += 1
-        if count % 4 == 0:
-            row_down()
+        x_position = 135
+        y_position = 233
+        count = 0
+        for item in category_list:
+            canvas.create_text(x_position, y_position, justify="center", text=item, font=FONT_NORMAL)
+            x_position += 187
+            count += 1
+            if count % 4 == 0:
+                row_down()
 
-    canvas.create_text(135, 94, text="Regeln:\n"
-                                     "1 Punkt pro Feld\n"
-                                     "3 Punkte pro Reihe (Bingo)", justify="center", font=FONT_BOLD)
-    canvas.create_text(697, 94, text=f"Datum: {datum}\n"
-                                     f"Name: {name}\n"
-                                     f"Schwierige Kategorien: {number_hard_categories}", justify="center",
-                                     font=FONT_BOLD)
+        canvas.create_text(135, 94, text="Regeln:\n"
+                                         "1 Punkt pro Feld\n"
+                                         "3 Punkte pro Reihe (Bingo)", justify="center", font=FONT_BOLD)
+        canvas.create_text(697, 94, text=f"Datum: {DATUM}\n"
+                                         f"Name: {name}\n"
+                                         f"Schwierige Kategorien: {number_hard_categories}", justify="center",
+                                         font=FONT_BOLD)
 
-    window.mainloop()
+        window.mainloop()
