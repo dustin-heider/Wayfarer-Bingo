@@ -13,6 +13,7 @@ def row_down():
     x_position = 135
     y_position += 176
 
+
 # add/delete categories in these two lists
 easy_categories = ['"Historisch"', '"INRI"', '"Hier sieht\nman ..."', '"Bitte Standort\nx nehmen"',
                    '"Jung & Alt /\nGroß & Klein"', '"Kein\nPrivatgrundstück"', '"Danke für die\n Bewertung" / "Danke"',
