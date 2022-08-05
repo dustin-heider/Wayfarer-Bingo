@@ -4,7 +4,7 @@ from datetime import datetime
 
 FONT_NORMAL = ("Arial", 13, "normal")
 FONT_BOLD = ("Arial", 11, "bold")
-STANDARD_DIFFICULTY = 5         # change if necessary
+STANDARD_DIFFICULTY = 5                 # change if too hard/easy
 
 
 # one row down if 4 categories are in one row
@@ -16,7 +16,7 @@ def row_down():
 
 # add/delete categories in these two lists
 easy_categories = ['"Historisch"', '"INRI"', '"Hier sieht\nman ..."', '"Bitte Standort\nx nehmen"',
-                   '"Jung & Alt /\nGroß & Klein"', '"Kein\nPrivatgrundstück"', '"Danke für die\n Bewertung" / "Danke"',
+                   '"Jung & Alt/\nGroß & Klein"', '"Kein\nPrivatgrundstück"', '"Danke für die\n Bewertung"/"Danke"',
                    '"Lädt zum\nVerweilen ein"',
 
                    'PokéStop-Variation', '3x gleicher Text', 'Beschreibung mit\neinem Wort', 'Wort mit\n12+ Buchstaben',
@@ -33,30 +33,33 @@ easy_categories = ['"Historisch"', '"INRI"', '"Hier sieht\nman ..."', '"Bitte St
                    'Stromkasten', 'Aussichtspunkt', 'Sportplatz', 'Vereinsheim', 'Spielplatz', 'Tischtennisplatte',
                    'Feuerwehr/\n(-Gedenkstein)', 'Baumarktlöwe', 'Stolperstein',
                    'Generisches\nStraßenschild', 'Sitzbank', 'Brunnen/\nWasserpumpe',
-                   'Gefallenendenkmal', 'Skulptur / Statue', 'Kleingartenverein', 'Insektenhotel',
-                   'Naturmerkmal', 'Wanderwegweiser', 'Kirche', 'Schule/Kindergarten', 'Fahrrad im Bild',
-                   'Wanderkarte/\nOrtskarte', 'Name des Spielgeräts\nim Titel', 'Willkommensschild']
+                   'Gefallenendenkmal', 'Skulptur/Statue', 'Kleingartenverein', 'Insektenhotel',
+                   'Naturmerkmal', 'Wanderwegweiser', 'Radwegweiser', 'Kirche', 'Schule/Kindergarten',
+                   'Fahrrad im Bild', 'Wanderkarte/\nOrtskarte', 'Name des Spielgeräts\nim Titel', 'Willkommensschild',
+                   'Objekt auf Friedhof/\nFriedhof', 'Wandbild/Garagenbild', 'Geschäft/Bäcker/\nSupermarkt',
+                   'Restaurant/Kneipe/\nGaststätte', 'Schild eines\nLehrpfads', 'Schutzhütte/Hütte']
 
-hard_categories = ['"Mural" falsch\nbenutzt', '"Anno / Erbaut"', '"Graffito/Graffiti"\nfalsch geschrieben',
-                   'Alliteration\n(3+ Wörter)', 'Wort in ALL CAPS', 'Link in Zusatzinfo', 'Beleidigung in\nZusatzinfo',
-                   'Denglisches Wort', 'Platzhalter-Texte', 'Emoji / Emoticon', 'Texte in verschiedenen\nSprachen',
+hard_categories = ['"Mural"', '"Anno/Erbaut"', '"Graffito/Graffiti"\nfalsch geschrieben', '"Erfüllt alle\nKriterien"',
+                   'Alliteration\n(3+ Wörter)', 'Wort in ALL CAPS', 'Link in Zusatzinfo',
+                   '(Passiv-) aggressive\nZusatzinfo', 'Platzhalter-Texte', 'Emoji/Emoticon',
+                   'Texte in verschiedenen\nSprachen',
 
-                   'Foto-Edits\n(3+ Bilder)', 'Standort-Edits\n(4+ Standorte)',
+                   'Standort-Edits\n(4+ Standorte)', 'Foto-Edits\n(3+ Bilder)', 'Spielplatz mit\n2+ Wayspots',
+                   'Aktuelles Streetview\n(bis 1 Jahr)', 'Ort mit 10+\nBuchstaben',
 
-                   'Foto mit\nWasserzeichen', 'Bildschirmfoto/\nScreenshot', 'Geotag im Zusatzbild',
-                   'Aktuelles Streetview\n(bis 1 Jahr)', 'Finger vor\nder Linse', 'Foto aus Auto/\nGebäude',
+                   'Spiegelung des\nFotografen', 'Foto mit\nWasserzeichen', 'Geotag im Zusatzbild',
+                   'Foto aus Auto/\nGebäude', 'Bildschirmfoto/\nScreenshot', 'Finger vor\nder Linse',
                    'Fuß/Schuh\nim Bild', 'Lebendiges\nTier im Bild',
 
-                   'Gedenkplakette bei\neinem Straßenschild', 'Baum verdeckt\nWayspot', 'Sonnenuhr', 'Gullydeckel',
-                   'Wegweiser\nzum Objekt', 'Museum', 'Litfaßsäule', 'Maibaum', 'Grenzstein/OD-Stein/\nKilometerstein',
-                   'Ort mit 10+\nBuchstaben', 'Kaugummi-/\nZigarettenautomat', 'Objekt im Kreisel', 'Wayspot im Wasser',
-                   'Schützenkönig/in-\nScheibe', 'Post-/Briefkasten', 'Spiegelung des\nFotografen',
-                   'Spielplatz mit\n4+ Wayspots', 'Fitness-Station', 'Saisonale Deko']
+                   'Baum verdeckt\nWayspot', 'Wayspot im Wasser', 'Objekt im Kreisel', 'Wegweiser\nzum Objekt',
+                   'Gedenkplakette bei\neinem Straßenschild',  'Sonnenuhr', 'Gullydeckel', 'Museum', 'Litfaßsäule',
+                   'Maibaum', 'Grenzstein/OD-Stein/\nKilometerstein', 'Kaugummi-/\nZigarettenautomat',
+                   'Schützenkönig/in-\nScheibe', 'Post-/Briefkasten', 'Fitness-Station', 'Saisonale Deko']
 
 # hard_categories_redacted = ['Collage', 'Casino / Stripclub',]
 
-# function to get and process inputs, creates Tkinter window with categories, screenshot window to save file
-# possibility of Ghostscript to save a file without screenshot?
+# use inputs to create Tkinter window with categories, screenshot window to save image
+# possibility of Ghostscript to save a file without using screenshot?
 players_remaining = True
 while players_remaining:
     name = input("Name: ")
