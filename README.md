@@ -13,4 +13,4 @@ This is how the template looks like before you run the program:
 
 After you input the name and number of hard categories:
 
-![Standard-Bingo](https://user-images.githubusercontent.com/58644408/165108599-cabcef48-5d59-4915-8fd6-33b1296c852f.png)
+![Standard-Bingo](https://user-images.githubusercontent.com/58644408/183158815-31b44ecb-0e00-4f86-9d5c-ee463104dbf5.PNG)
