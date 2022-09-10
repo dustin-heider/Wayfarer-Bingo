@@ -1,0 +1,51 @@
+Simple categories,Difficult categories
+same text in title and description,Wayfarer-reference
+title with one word,Link in supporting information
+title with six or more words,word in ALL CAPS
+"""Need more Stops"" or similar expression",placeholder-texts
+reference to a Niantic game,emoji/emoticon
+text with quotation marks,texts in different languages
+photo of a legible license plate,"""please select location x"""
+literal garbage in the picture,edit-review with 3 or more options
+live animal in the photo,city with 10 or more characters
+live person in photo,photo with watermark
+picture taken at night,selfie/reflection of the submitter
+Low quality picture (LPQ),Pokémon GO AR photo
+photo where the sun is visible,picture with snow/sand
+primary photo contains graffiti,third party photo/picture of a screen
+zoomed-in picture,identical main and supporting picture
+useless supporting picture,picture taken from a car
+empty duplicate map,ornithological (bird)-related
+duplicate,train-related
+public transit station/stop,vehicle/vehicle-related shop
+baseball/soccer/US football field,bicycle-related
+basketball/tennis/pickle-ball court,museum
+bench,place of worship
+brewery/winery/bar,dock/pier or similar structure
+cemetery/nomination in a cemetery,nomination of a hospital (or located at one)
+fire hydrant/fire department,post office/post box
+water tower/tank/swimming pool,theater/auditorium
+fountain,campground
+garden/flower landscaping,nomination in an amusement park
+gazebo/similar shade structure,
+gym/exercise equipment,
+historic building,
+nomination at/of a K12 school,
+library/little free library,
+memorial/donor/dedication plaque,
+mural,
+named art piece,
+nature sign,
+park/park sign,
+place of worship,
+playground,
+located on PRP,
+sculpture/statue,
+sign for apartment/neighborhood/city,
+trail marker/cairn,
+tree/plant or marker for them,
+footbridge,
+restaurant/cafe,
+place name/directional sign/map,
+utility box,
+generic street sign,
